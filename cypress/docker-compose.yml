@@ -1,0 +1,23 @@
+services:
+  test1:
+    build:
+      context: .
+      dockerfile: cypress.dockerfile
+    user: "${UID:-1001}:${GID:-1001}" 
+    environment:
+      - i stored here env variables
+    command: ["npx", "cypress", "run", "--record", "--key", "${CYPRESS_RECORD_KEY}", "--ci-build-id", "${CI_BUILD_ID}",  "--group", "Build & Admin Tests", "--spec", "cypress/e2e/Build/build-channels.cy.js and so on, other tests"]
+    volumes:
+       - ${TEAMCITY_BUILD_CHECKOUT_DIR:-.}:/home/appuser
+       - ./cypress/downloads:/e2e/cypress/downloads
+  test2:
+    build:
+      context: .
+      dockerfile: cypress.dockerfile
+    user: "${UID:-1001}:${GID:-1001}" 
+    environment:
+      - i stored here env variables
+    command: ["npx", "cypress", "run", "--record", "--key", "${CYPRESS_RECORD_KEY}", "--ci-build-id", "${CI_BUILD_ID}", "--group", "Home & Tools Tests", "--spec",  "cypress/e2e/home.cy.js and so on, other tests"]
+    volumes:
+        - ${TEAMCITY_BUILD_CHECKOUT_DIR:-.}:/home/appuser
+        - ./cypress/downloads:/e2e/cypress/downloads

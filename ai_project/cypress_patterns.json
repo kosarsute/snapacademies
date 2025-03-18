@@ -1,0 +1,791 @@
+{
+    "test_cases": [
+        {
+ "title": "Navigation Manus",
+    "selectors": [
+  { "[data-testid='/insights']": "Navigate to Insights" },
+ { "[data-testid='/build']": "Navigate to Build" },
+{ "[data-testid='/report_plus']": "Navigate to Reporting+" },
+{ "[data-testid='/review']": "Navigate to Review" },
+{ "[data-testid='/inspect']": "Navigate to Inspect" },
+{ "[data-testid='/forecasting']": "Navigate to Forecasting" },
+{ "[data-testid='/tools']": "Navigate to Tools" },
+{ "[data-testid='/tools/pacing_report']": "Navigate to Pacing Report that inside tools" },
+{ "[data-testid='/tools/custom_data']": "Navigate to Custom Data that inside tools" },
+{ "[data-testid='/tools/audit_queue']": "Navigate to Audit Queue that inside tools" },
+{ "[data-testid='/tools/custom_tagger']": "Navigate to Custom tagger that inside tools" },
+{ "[data-testid='/admin']": "Navigate to Admin" },
+{ "[data-testid='/admin/user_analytics']": "Navigate User Analytics that inside admin" }, 
+{ "[data-testid='/admin/users']": "Navigate to Users that inside admin" },
+{ "[data-testid='/admin/notifications_manager']": "Navigate to Notification manager that inside admin" },
+{ "[data-testid='/admin/domain_manager']": "Navigate to Domain Manager that inside admin" },
+{ "[data-testid='/admin/keywords_editor']": "Navigate to Keywords Editor that inside admin" },
+{ "[data-testid='/admin/blocklist_manager']": "Navigate to Blocklist manager that inside admin" },
+{ "[data-testid='/admin/data_tracker']": "Navigate to Data Tracker that inside admin" },
+{ "[data-testid='/admin/comscore_editor']": "Navigate to Comscore Editor that inside admin" },
+{ "[data-testid='/admin/umbrella_topics']": "Navigate to Umbrella topics that inside admin" },
+{ "[data-testid='/admin/cid_manager']": "Navigate to CID manager that inside admin" },
+{ "[data-testid='/exports_manager']": "Navigate to Exports" }
+  ]
+        },
+        {
+            "title": "Home",
+    "selectors": [
+        { "span.home:first": "Click Home Button" },
+        { "span.title": "Get Channel Title" },
+        { ".title-container > .name": "Get Card Title" },
+        { ".global-header-btn": "Click Back to Insights Button" },
+        { ".data-row": "Get Data Row" },
+        { ".number:first": "Get Running Audits Count" },
+        { ".number:eq(1)": "Get Queued Audits Count" },
+        { ".no-audits": "Check No Audits Message" },
+        { "div.audit-item": "Get Audit Item" },
+        { ".machines": "Get Number of Machines" },
+        { "div.op-item": "Get Watchlist Item" },
+        { "div.watchlist-container": "Get Number of Watched Items" },
+        { "button.not-watched": "Click Watch Button" },
+        { "button.watched": "Click Watched Button" },
+        { "button.not-watched": "Check Disabled Button" },
+        { ".alert-icon": "Click Bell Icon" },
+        { "#checkboxes-filter-watch-true-pacing-report-filters": "Filter Watched Items" },
+        { ".apply-button": "Click Apply Button" },
+        { "[href='/insights']": "Navigate to Insights Page" },
+        { "div.icons": "Get Icons" },
+        { ".email:contains('Help Center')": "Open Service Desk" },
+        { "div.sc-fihHvN.iBsklD": "Open Help Center" },
+        { ".loading-bar.indeterminate": "Check Loading Bar" },
+        { "[data-testid='/admin']": "Navigate to Admin Page" },
+        { "[data-testid='/admin/umbrella_topics']": "Navigate to Umbrella Topics" },
+        { "[data-testid='/tools']": "Navigate to Tools" },
+        { "[data-testid='/tools/custom_tagger']": "Navigate to Custom Tagger" },
+        { "div.page-title": "Get Welcome User Header" },
+        { "[data-testid='/exports_manager']": "Navigate to Export Manager" },
+        { "[data-testid='/forecasting']": "Navigate to Forecasting Page" }
+   ]
+        },
+        {
+            "title": "Insights",
+                    "selectors": [
+        { "div.apply-btn": "Click Apply Button" },
+        { ".tab-item:contains('Videos')": "Navigate to Videos Tab" },
+        { "div.reset-btn": "Click Reset Button" },
+        { "#search-input": "Enter Search Query" },
+        { "//div[@class='checkbox-container no-select']//span[text()='United States']": "Select Region Filter - US" },
+        { "//span[text()='United States']": "Select Region - US" },
+        { "#video-search": "Enter Video Search Query" },
+        { "div.title-container .name": "Get Card Title" },
+        { ".name > a": "Get Video Title" },
+        { "div.title-container .name": "Get Opened Channel Title" },
+        { "div.title-container .name": "Get Opened Video Title" },
+        { "[aria-label='Next page']": "Click Next Page Button" },
+        { "[id='checkboxes-filter-brand_safety-Suitable-channels-filters-panel']": "Apply Suitability Filter" },
+        { "[id='checkboxes-filter-general_data.iab_categories-Hobbies & Interests-channels-filters-panel']": "Apply IAB Category Filter" },
+        { "[id='checkboxes-filter-general_data.country_code-US-channels-filters-panel']": "Apply Country Filter - US" },
+        { "[id='checkboxes-filter-general_data.top_lang_code-en-channels-filters-panel']": "Apply Language Filter - English" },
+        { "[id='checkboxes-filter-auth_channel-true-channels-filters-panel']": "Apply Features Filter" },
+        { ".dd-item:first": "Select Country Dropdown" },
+        { ".dd-item:eq(1)": "Select Language Dropdown" },
+        { "[class='global-header-btn']": "Click Export Button" },
+        { ".popover-btn": "Open Filters Popover" },
+        { ".inputbox-range.min": "Enter Minimum Value" },
+        { ".ellipsis-overflow": "Select Filter by Name" },
+        { "div.loading-bar": "Wait for Loading Bar to Disappear" },
+        { ".mr-15.fs-14": "Get Estimate Value" }
+     ]
+        },
+        {
+            "title": "Tools",
+                    "selectors": [
+        { ".audit-name": "Get Audit Name" },
+        { "input.audit-name-input": "Enter Audit Name" },
+        { "button.create-audit-btn": "Click Add New Audit Button" },
+        { ":contains('Audit Queue')": "Navigate to Audit Queue" },
+        { ".option > :nth-child(2) > .btn-group > .btn": "Select Audit Type Dropdown" },
+        { "[title='Video Meta']": "Select Video Meta Type" },
+        { "[title='Channel Meta']": "Select Channel Meta Type" },
+        { "[title='Reco. Engine']": "Select Recommendation Engine Type" },
+        { "#source-input": "Enter Source URLs" },
+        { "#exclusion-input": "Enter Exclusion List" },
+        { "#inclusion-input": "Enter Inclusion List" },
+        { "div.input-container": "Enter File Name" },
+        { ":nth-child(1) > .checkboxer": "Check Process Channel Videos" },
+        { "[placeholder='Target here']": "Enter Target List Size" },
+        { ".views > :nth-child(1) > .name-input": "Enter Minimum Views" },
+        { "[placeholder='mm/dd/yyyy']": "Select Published After Date" },
+        { ".watch-btn": "Click Watch Button" },
+        { ".popover-btn": "Open Filters Dropdown" },
+        { "span.exit-btn": "Close Filters" },
+        { ":contains('My Watchlist')": "Open My Watchlist" },
+        { ".apply-btn": "Apply Filters" },
+        { ".item-title": "Get Card Titles" },
+        { ".watch-btn.watched": "Check Watching Status" },
+        { ".watch-btn.not-watched": "Click Watch Button for Unwatched" },
+        { "button.btn-flat-grey-circle-small": "Click Edit Button" },
+        { "[placeholder='Input notes here...']": "Enter Notes" },
+        { ".button-white-big-weighted": "Click Update Button" },
+        { ".fa-sort-down": "Open Margin Dropdown" },
+        { "[title='Current Month']": "Select Current Month" },
+        { "[title='Overrall']": "Select Overall Option" },
+        { ".card-stats > .op-margin > .statbox > .number": "Get Margin Value" },
+        { ":contains('.ellipsis-overflow', 'Completed')": "Filter by Completed Status" },
+        { ":contains('.ellipsis-overflow', 'Upcoming')": "Filter by Upcoming Status" },
+        { ".fa-sort-desc.ta-down": "Open Campaign Dropdown" },
+        { ".fa-sort-up.ta-up": "Sort Campaign Up/Down" },
+        { "div.checkboxer-white": "Select Include Checkbox" },
+        { ":contains('.ellipsis-overflow', 'All')": "Filter by All Status" },
+        { ".edit-margincap > input": "Edit Margin Cap" },
+        { ".btn-yes": "Click Yes Button" },
+        { ".btn-ok": "Click OK Button" },
+        { ".fl-card-stats > .spend": "Get Spend Goal" },
+        { ".close-container": "Reset Margin" },
+        { "button.allocate-btn": "Click Allocate Button" },
+        { ".flight-chart-btn": "Show Charts" },
+        { ":contains('.ta-start', 'Close Chart')": "Close Charts" },
+        { "div.chart-render": "Check Charts Render" },
+        { ".reset-btn": "Reset Filters" },
+        { "div.no-items-warning": "Check No Item Warning" },
+        { "#search-input": "Search in Audit Page" },
+        { ".download-dropdown": "Open Download Dropdown" },
+        { "[title='Exclusion List Only']": "Select Exclusion List Only" },
+        { "[title='Subscription Engine']": "Select Subscription Engine" },
+        { "input.name-input": "Enter Name Input" },
+        { ":contains('button', 'Create')": "Click Create Button" },
+        { ".types-container > :nth-child(1)": "Select Audit Type - Video Meta" },
+        { "#new-audit-modal > .modal-dialog > .modal-content > .modal-footer > .confirm-btn": "Click Create Button in Modal" },
+        { ".types-container > :nth-child(2)": "Select Audit Type - Channel Meta" },
+        { ".types-container > :nth-child(3)": "Select Audit Type - Subscription Engine" },
+        { ".types-container > :nth-child(4)": "Select Audit Type - Content Discovery" },
+        { ".ws-nowrap.ml-5": "Get Number of Machines" },
+        { ".material-icons.mr-10:eq(3)": "Enable Process Channel Videos" },
+        { ".material-icons.mr-10:eq(4)": "Enable CV" },
+        { ".image-policies-dp": "Select Image Policies Dropdown" },
+        { "[placeholder='00']:eq(1)": "Enter Row Count" }
+   ]
+        },
+        {
+            "title": "My custom data",
+                  "selectors": [
+        { "[href='/tools/custom_data']": "Navigate to My Custom Data" },
+        { "#csv-list": "Upload File for Creating a List" },
+        { "//div[@class='has-child' and descendant::div[@id='/tools']]": "Open Tools Menu Dropdown" },
+        { "//div[@class='tab-item' and contains(text(), 'Keywords')]": "Navigate to Keywords Tab" },
+        { "//div[@class='tab-item' and contains(text(), 'Channels')]": "Navigate to Channels Tab" },
+        { "//div[@class='tab-item' and contains(text(), 'Videos')]": "Navigate to Videos Tab" },
+        { "//div[@class='tab-item' and contains(text(), 'Build Templates')]": "Navigate to Build Templates Tab" },
+        { "//button[@class='create-list-btn']": "Click Create A List Button" },
+        { "#keywords-list-modal > div > div > div.modal-body > div.list-options > input": "Enter Create A List Title" },
+        { "#keywords-list-modal > div > div > div.modal-body > div.list-options > div.type-container > div:nth-child(2)": "Select Inclusion List Checkbox" },
+        { "#keywords-list-modal > div > div > div.modal-body > div.list-options > div.type-container > div:nth-child(3)": "Select Exclusion List Checkbox" },
+        { "//button[@class='save-btn']": "Click Save Button in Create A List Modal" },
+        { "[placeholder='Search']": "Search in Custom Data" },
+        { "(//span[@class='title ellipsis-overflow'])[1]": "Get First Entry in Custom Data" },
+        { "(//i[@class='fa fa-trash'])[1]": "Delete First Entry in Custom Data" },
+        { "//button[@class='btn btn-ripple btn btn-ripple delete-btn mb-5 btn-xs he-30 br-2 btn-xs']": "Confirm Delete in Delete Module" },
+        { "//div[@class='empty-state']": "Check Empty State in Custom Data" },
+        { ".modal-header": "Get Create List Pop-Up Header" },
+        { "//div[@class='has-child' and descendant::div[@id='/tools']]": "Open Tools Menu Dropdown in Reporting Plus" },
+        { "//div[@class='tab-item' and contains(text(), 'Channels')]": "Navigate to Channels Tab in Reporting Plus" },
+        { "//div[@class='tab-item' and contains(text(), 'Videos')]": "Navigate to Videos Tab in Reporting Plus" },
+        { "//div[@class='tab-item' and contains(text(), 'Build Templates')]": "Navigate to Build Templates Tab in Reporting Plus" },
+        { "//button[@class='create-list-btn']": "Click Create A List Button in Reporting Plus" },
+        { "#keywords-list-modal > div > div > div.modal-body > div.list-options > input": "Enter Create A List Title in Reporting Plus" },
+        { "#csv-list": "Upload File for Creating a List in Reporting Plus" },
+        { "#keywords-list-modal > div > div > div.modal-body > div.list-options > div.type-container > div:nth-child(2)": "Select Inclusion List Checkbox in Reporting Plus" },
+        { "#keywords-list-modal > div > div > div.modal-body > div.list-options > div.type-container > div:nth-child(3)": "Select Exclusion List Checkbox in Reporting Plus" }
+    ]
+        },
+        {
+            "title": "Inspect",
+                    "selectors": [
+        { ".tab-item:contains('Details')": "Navigate to Details Section" },
+        { "button.export-noncf": "Click Export Non-CF Button" },
+        { "[data-testid='/inspect']": "Navigate to Inspect Page" },
+        { ".modal-body": "Get Confirmation Pop-Up" },
+        { "[data-dismiss='modal']:contains('Ok')": "Click Confirmation OK Button" },
+        { ".spend-impressions-container": "Get Spend and Impressions Container" },
+        { ".detail-metric-value": "Get Metric Values" },
+        { "div.cpm-percentage": "Get CPM Percentage" },
+        { ".bar-section": "Get Bar Section" },
+        { "span:contains('Details')": "Click Inspect Details Button" },
+        { "input#search-input": "Enter Search Query in Inspect Page" },
+        { "div.btn-group > button[data-toggle='dropdown'].dropdown-toggle": "Click Inspect Button on Main Inspect Page" },
+        { "small[css-content='Select An Account From GoogleAds']": "Click Inspect Button for Google Ads Account" },
+        { "span.title:contains('Inspect from Google Ads Account')": "Verify Inspect Google Ads Modal Header" },
+        { "button.button.confirm:contains('Next')": "Click Next Button in Google Ads Inspect" },
+        { "span.title:contains('90 Days')": "Select 90 Days Time Frame in Google Ads Inspect" },
+        { "div.suitability:eq(0)": "Select High Brand Suitability in Google Ads Inspect" },
+        { "span:contains('Select All'):eq(0)": "Select All Languages in Google Ads Inspect" },
+        { "div.select-all-container span:eq(2)": "Select All Categories in Google Ads Inspect" },
+        { "button:contains('Process')": "Click Process Button in Google Ads Inspect" },
+        { "input[placeholder='Search CIDs']": "Search CIDs in Google Ads Inspect" },
+        { ".totals-container > :nth-child(1)": "Get Impressions Tile in Inspect Page" },
+        { ".totals-container > :nth-child(2)": "Get Views Tile in Inspect Page" },
+        { ".totals-container > :nth-child(3)": "Get Cost Tile in Inspect Page" },
+        { ".totals-container > :nth-child(4)": "Get Channels Tile in Inspect Page" },
+        { "span.header-item:contains('Total Impressions')": "Sort by Total Impressions" },
+        { "span.header-item:eq(5)": "Sort by Total Impressions in Suitability Breakdown" },
+        { "span.header-item:eq(8)": "Sort by Total Impressions in Language Breakdown" },
+        { ".popover-btn:contains('Filters')": "Open Filters in Inspect Page" },
+        { "span.ellipsis-overflow:eq(0)": "Apply Vetted Risky Filter" },
+        { "span.ellipsis-overflow:eq(1)": "Apply Not Vetted Risky Filter" },
+        { "span.ellipsis-overflow:eq(2)": "Apply Vetted Safe Filter" },
+        { ".apply-btn": "Click Apply Button in Filters" },
+        { "span.exit-btn": "Exit Filters" },
+        { ".filters-popover-controller > .mr-10": "Click Export Button" },
+        { "span.legend-name": "Verify Delivery Source Labels" },
+        { "span:contains('Categories Breakdown by Impressions')": "View Categories Breakdown by Impressions Graph" },
+        { "div.flex-centered-start-row.width-100": "Verify Categories Breakdown Table Rows" },
+        { "span:contains('Suitability Breakdown by Impressions')": "View Suitability Breakdown by Impressions Graph" },
+        { "span.header-item div:eq(1)": "Verify Suitability Breakdown Table Rows" },
+        { "span:contains('Language Breakdown by Impressions')": "View Language Breakdown by Impressions Graph" },
+        { "span.header-item div:eq(2)": "Verify Language Breakdown Table Rows" },
+        { "span:contains('Delivery Source')": "View Delivery Source Breakdown by Impressions Graph" }
+    ]
+        },
+        {
+            "title": "Admin",
+    "selectors": [
+        { "button.global-header-btn:contains('Add Tag')": "Click Add Tag Button" },
+        { ":nth-child(7) > .parent-layer-menu": "Open Admin Dropdown" },
+        { "[href='/admin/keywords_editor']": "Navigate to Keywords Editor" },
+        { "#search": "Enter Search Keyword" },
+        { "button:contains('Search')": "Click Search Button" },
+        { ".trash": "Click Trash Icon" },
+        { ".yes": "Confirm Delete by Clicking Yes" },
+        { "#edit-tag > .modal-dialog > .modal-content > .modal-body > .tagedit-modal > :nth-child(2) > .btn-group > .btn": "Open Language Dropdown" },
+        { "span.dropdown-title:contains('Export Tags')": "Open Export Tags Dropdown" },
+        { "[title='Current View']": "Select Current View" },
+        { "//input[@placeholder='Search']": "Enter User List Search Query" },
+        { "[href='/admin/users']": "Navigate to User List" },
+        { "//div[@class='popover-btn']": "Open User List Filters" },
+        { "//div[@class='apply-btn']": "Click Apply Button in User List Filters" },
+        { "#search-input": "Enter Search Query in User List" },
+        { ".username": "Get User Name in User List" },
+        { "//div[@class='reset-btn']": "Reset User List Filters" },
+        { "//button[text()='Log In As User']": "Click Log In As User Button" },
+        { "//span[text()='My Profile']": "Navigate to My Profile" },
+        { "//div[@class='email']": "Check User Email" },
+        { "//button[text()='Back to my account']": "Click Back to My Account" },
+        { "//div[@class='wide-box'][1]": "Select Pending Users" },
+        { "//div[@class='wide-box'][2]": "Select Active Users" },
+        { "//div[@class='wide-box'][3]": "Select Rejected Users" },
+        { "//a[@aria-label='Next page']": "Navigate to Next Page in User List" },
+        { "//a[@aria-label='Previous page']": "Navigate to Previous Page in User List" },
+        { "//a[@aria-label='Page 5']": "Navigate to Page 5 in User List" },
+        { "//a[@rel='canonical']": "Get Current Page Button in User List" },
+        { "//button[@class='action-btn permissions ']": "Click Set Permissions Button" },
+        { "//i[@id='admin-off']": "Turn Off Admin Permissions" },
+        { "//i[@id='admin-on']": "Turn On Admin Permissions" },
+        { "//button[@class='btn btn-ripple dropdown-toggle permtype-dp selected btn-xs']": "Open Permissions Type Dropdown" },
+        { "//span[text()='Restricted Access']": "Select Restricted Access Permission" },
+        { "(//button[@class='global-header-btn'])[2]": "Click Save Button in User List" },
+        { "//div[text()='Confirm']": "Confirm Save Permissions" },
+        { "//button[@class='btn btn-ripple add-role btn-xs']": "Click Add Role Button" },
+        { "//span[text()='contacts']": "Select Contacts Role" },
+        { "//input[@placeholder='Role Name']": "Enter Role Name" },
+        { "//i[@id=('audit_queue-on')]": "Turn On Audit Queue Role" },
+        { "//div[@class='global-header-btn dropdown mr-10'][1]": "Open Region Dropdown" },
+        { "//span[@title='Asia Pacific']": "Select Asia Pacific Region" },
+        { "//span[@title='rc.Automationdomain']": "Select Automation Domain" },
+        { "//div[@class='global-header-btn dropdown mr-10'][2]": "Open Role Domain Dropdown" },
+        { "//span[@class='ellipsis-overflow' and text()='No Permissions (QA only)']": "Select No Permissions (QA only)" },
+        { "//div[text()='No Permissions (QA only)']": "Confirm No Permissions Selection" },
+        { "//button[@class='customize-user']": "Click Customize User Button" },
+        { "//span[@class='material-symbols-outlined edit-cog show']": "Open Role Settings" },
+        { "//input[@placeholder='Who would you like to add to this role?']": "Enter User to Add to Role" },
+        { ".search-card:eq(0)": "Select First User from Search Results" },
+        { "(//td[@class='table-title-col copy'])[1]": "Get First Option in User List" },
+        { "//span[contains(text(), 'All Users')]/parent::span/parent::button": "Open All Users Dropdown" },
+        { "//div[@class='user-info']//span[@class='name']": "Get Role User Card Name" },
+        { "//i[@aria-hidden='true']": "Click Role Trash Icon to Remove User" },
+        { "//span[@class='opt'][1]": "Confirm User Removal" },
+        { "(//span[@class='upper-value'])[1]": "Get User First Name" },
+        { "//div[@class='loader-container']": "Wait for Loading Bar" },
+        { "(//span[@class='dropdown-title'])[6]": "Get Region Dropdown Title" },
+        { ".apply-btn": "Click Apply Filter Button" },
+        { ".action-btn.delete": "Click Delete User Button" },
+        { ".btn-danger": "Confirm User Deletion" },
+        { "[href='/admin/blocklist_manager']": "Navigate to Blocklist Manager" },
+        { ".main-block-btn": "Click Block Channels Button" },
+        { "textarea.urls-text": "Enter URLs to Block" },
+        { ".block-btn": "Click Block Button" },
+        { "//div[@class='status pending']": "Filter Pending Status in User List" },
+        { "//div[@class='status active']": "Filter Active Status in User List" },
+        { "//div[@class='status rejected']": "Filter Rejected Status in User List" },
+        { ".viewiq-page-btn": "Click ViewIQ Page Button" },
+        { "button.unblock-btn": "Click Unblock Button" },
+        { ".unblock-btn.mr-10": "Verify Unblock Button" },
+        { "#asset-search": "Enter Search Query in Blocklist Manager" },
+        { "[class='data-field']": "Get Blocklisted Channels" },
+        { "[class='data-field url']": "Get Blocklisted Channels URLs" },
+        { ".tab-item:contains('Videos')": "Navigate to Videos Tab" },
+        { ".tab-item:contains('Channels')": "Navigate to Channels Tab" },
+        { "div#text-container.style-scope.ytd-channel-name": "Get YouTube Channel Name" },
+        { ":nth-child(2) > :nth-child(6) > .viewiq-page-btn": "Click First ViewIQ Page Button" },
+        { "div.item": "Get Keyword Item" },
+        { "(//div[@class='popover-btn'])[2]": "Open Filters Pop-Up" },
+        { "(//div[@class='popover-btn'])[1]": "Open Roles Pop-Up" },
+        { "(//div[@class='popover-btn applied'])[1]": "Check Active Role Pop-Up" },
+        { "a[href='/admin/umbrella_topics']": "Navigate to Umbrella Topics" },
+        { "input[type='search']": "Search in Umbrella Topics" },
+        { "button:contains('New Umbrella')": "Click New Umbrella Button" },
+        { "input[placeholder='Name your umbrella']": "Enter Umbrella Topic Name" },
+        { "span:contains('Choose Topics')": "Open NLP Topics Selection" },
+        { "input[placeholder='Search...']": "Search in NLP Topics" },
+        { ".select-all": "Select All NLP Topics" },
+        { "span:contains('Choose Categories')": "Open IAB3 Categories Selection" },
+        { "span:contains('Publish Umbrella Topic')": "Select Publish Umbrella Topic Checkbox" },
+        { "button:contains('Publish')": "Click Publish Umbrella Topic" },
+        { ".edit-btn": "Click Edit Umbrella Topic" },
+        { "button:contains('Duplicate')": "Click Duplicate Umbrella Topic" },
+        { "div.umbrella-card:eq(0) .trash-icon": "Delete First Umbrella Topic" },
+        { "button.confirm-btn:eq(0)": "Confirm Delete Umbrella Topic" },
+        { "[data-testid='/admin/notifications_manager']": "Navigate to In-App Notifications" },
+        { "div.global-header-btn": "Click Create New Notification" }
+   ]
+        },
+        {
+            "title": "Build",
+    "selectors": [
+        { "[data-testid='/build']": "Navigate to Build Page" },
+        { "div.header-createlist-button:contains('Create a List')": "Click Create List Button" },
+        { ".next-btn": "Click Next Button" },
+        { "//button[@class='back-btn']": "Click Back Button" },
+        { ".toggle-item:contains('Advanced')": "Toggle Advanced Filters" },
+        { ".garm-title": "Select GARM Title" },
+        { ".medium": "Select Medium Suitability" },
+        { ".low": "Select Low Suitability" },
+        { ".any": "Select Any Suitability" },
+        { "span.title": "Navigate to Tab" },
+        { "[placeholder='Type Value']": "Enter Value in Performance Section" },
+        { "[placeholder='Give your list a name']": "Enter Name of List" },
+        { "#search-input": "Enter Search Query" },
+        { "[tip]": "Select Build Name" },
+        { "div.title-section": "Check Pending Build Status" },
+        { ".mini-option": "Select Format of List" },
+        { "[type='file']:eq(0)": "Upload Inclusion List File" },
+        { "//span[@class='dropdown-title' and text()='Select an inclusion list']": "Open Inclusion List Dropdown" },
+        { "#build-list-modal .filter.custom-keywords input": "Search in Inclusion List Dropdown" },
+        { "(//li[@class='no-spacing'])[1]": "Select First Item in Inclusion List Dropdown" },
+        { ".inclusion-btn.ready": "Check Inclusion File Name" },
+        { "[type='file']": "Upload Exclusion List File" },
+        { ".exclusion-btn.ready": "Check Exclusion File Name" },
+        { ".custom-segment-card": "Select Build Card" },
+        { "//*[contains(text(),'Tools')]": "Navigate to Tools" },
+        { "[href='/tools/audit_queue']": "Navigate to Audit Queue" },
+        { ".main:contains('Upload CSV File')": "Click Upload Custom List" },
+        { "[type='file']": "Click Browse Button" },
+        { ".file-name": "Check File Name" },
+        { ".simple-popover-btn:contains('Search Languages ')": "Open Language Pop-Up" },
+        { ".simple-popover-btn:contains('Search Countries ')": "Open Countries Pop-Up" },
+        { ".extra-option.mb-5": "Check Primary Category Checkbox" },
+        { ".simple-popover-btn:contains('Search primary categories to include ')": "Open Include Primary Categories" },
+        { ".simple-popover-btn:contains('Search topics to include ')": "Open Include Topics" },
+        { ".btn.item-header": "Expand List" },
+        { "(//div[@class='opt'])[2]": "Select Build Format - Videos" },
+        { "div.tab-item:contains('Videos')": "Navigate to Videos Tab" },
+        { ".item:contains('automation')": "Select Automation Domain" },
+        { ".loading-bar.indeterminate": "Wait for Loading Bar" },
+        { ".rotating-i": "Check Rotation Circle" },
+        { ".users-box > .item": "Share with User" },
+        { ".dropdown-title:contains('List Type')": "Filter Lists" },
+        { "[title='My Lists']": "Select My Lists Filter" },
+        { "button.apply-btn:contains('Apply Filters')": "Click Apply Filters Button" },
+        { ".next-btn": "Click Update Build" },
+        { "//span[text()='Contextual']": "Navigate to Contextual Tab" },
+        { "button.simple-popover-btn:contains('Search categories to include ')": "Open IAB22 Category Dropdown Include" },
+        { "//span[text()='Performance']": "Navigate to Performance Tab" },
+        { ".save-btn": "Click Save Template Button" },
+        { ".templates-dp": "Open Saved Templates Dropdown" },
+        { ".name:contains('Delete')": "Delete Build List" },
+        { ".rotating-i": "Check Spinner" },
+        { "span.enable": "Click Enable Vetting Button" },
+        { ".notes-title": "Check Vetting Notes" },
+        { ".enable-btn": "Click Enable Button" },
+        { "div.vetting-body": "Check Vetting Body" },
+        { ".settings": "Check Auto Refresh Info" },
+        { "(//span[@data-tip='Push'])[1]": "Click Push Button for First List" },
+        { "//span[@class='dropdown-title' and text()='Add Keywords Exclusions']": "Open Push Modal Keywords Dropdown" },
+        { "(//li[@class='no-spacing'])": "Select Push Modal Keywords Dropdown Options" },
+        { "//button[@class='button cancel']": "Click Push Modal Cancel Button" },
+        { ".name:contains('Vet Items')": "Click Vet Items Button" },
+        { "button.close-btn:contains('Got it')": "Click Got It Button" },
+        { ".no-spacing": "Check Mismatch Reasons" },
+        { ".fa-flag": "Click Flag Icon" },
+        { "button.dropdown-toggle.reasons": "Open Mismatch Dropdown" },
+        { ".data": "Get Inventory Data" },
+        { "div.data:eq(0)": "Get Total Channels" },
+        { "div.data:eq(1)": "Get Potential Channels" },
+        { "div.data:eq(2)": "Get Potential Subscribers" },
+        { "div.data:eq(3)": "Get Potential Views" },
+        { ".header-createlist-button": "Open Create List Dropdown" },
+        { "div.creation-type-btn": "Select Standard Regional List" },
+        { ".creation-type-btn:contains('Create An Advanced List')": "Select Advanced List" },
+        { "//input[@placeholder='Search Template']": "Search Template" },
+        { "//div[@class='displayed-item'][1]": "Select First Item from Template Search" },
+        { ".next-btn:contains('Create')": "Click Create List Button" },
+        { "span.title:contains('Vetting')": "Navigate to Vetting Tab" },
+        { "div.toggle-item:contains('Classified by AI')": "Toggle Classified by AI" },
+        { "div.opt:contains('Infants')": "Select AI Infants Option" },
+        { "span.main:contains('Meta Exclusion List')": "Select Meta Exclusion Type" },
+        { ".title:contains('Meta Filters')": "Click Meta Filters Button" },
+        { "span:contains('In-stream')": "Select In-stream Type" },
+        { ".title": "Navigate to Tab" },
+        { ".popover-opener.full": "Open Pop-Up" },
+        { "#popover_nlp_topics": "Enter Topic Search Query" },
+        { ".global-header-btn": "Click Build with Cosmo AI Button" },
+        { ".modal-header": "Check Cosmo AI Modal Header" },
+        { ".button-type:contains('Channels')": "Select Channels List in Cosmo AI" },
+        { ".type-dropdown": "Open Template Dropdown" },
+        { "span.text-choice.next": "Click Next Button in Cosmo AI" },
+        { ".button-type:contains('Customize')": "Click Customize Button" },
+        { ".button-type:contains('Any Content (relaxed)')": "Select Any Suitability in Cosmo AI" },
+        { "span:contains('Select an inclusion list')": "Open Inclusion List Dropdown in Cosmo AI" },
+        { "span:contains('Search categories to include ')": "Open IAB Category Dropdown" },
+        { "span:contains('Save List')": "Click Save List Button" },
+        { "span:contains('Done')": "Click Done Button" },
+        { "div.pending": "Check Pending List Status" },
+        { "[placeholder='Name your list']": "Enter List Name" },
+        { "div.custom-segment-card": "Get Build Card" },
+        { "[spoilerid='item-collapse']": "Expand List Channels" },
+        { "[spoilerid='item-collapse']": "Expand List Videos" },
+        { "//span[text()='Product Type']": "Open Product Type Dropdown" },
+        { "//span[text()='Inclusion']": "Select Inclusion Product Type" },
+        { "//span[text()='Exclusion']": "Select Exclusion Product Type" },
+        { "//span[text()='YT Inclusion']": "Select YouTube Inclusion Label" },
+        { "//span[text()='YT Exclusion']": "Select YouTube Exclusion Label" },
+        { "//button[text()='Reset Filters']": "Click Reset Filters Button" },
+        { ".list-name-input": "Enter Name of Exclusion List" },
+        { ".next-btn:contains('Save List')": "Click Save Exclusion List Button" },
+        { ".product-label.exclusion": "Check Exclusion Label" },
+        { "span.main:contains('Youtube Exclusion List')": "Select YouTube Exclusion Type" },
+        { ".title:contains('Curated Topics')": "Click Curated Topics Filter Button" }
+   ]
+        },
+        {
+            "title": "Reporting+",
+    "selectors": [
+        { "[href='/report_plus']": "Navigate to Reporting Plus Page" },
+        { "[name='start']": "Select Calendar Start Date" },
+        { "input#search-input": "Enter Search Query" },
+        { ".title-section > .title": "Get Account Title" },
+        { ".popover-btn": "Open Filters Popover" },
+        { "span.ellipsis-overflow:contains('Active')": "Filter by Active Status" },
+        { "div.wide-box:contains('Inactive')": "Filter by Inactive Status" },
+        { "span.ellipsis-overflow:contains('All')": "Filter by All Status" },
+        { ".apply-btn": "Apply Filters" },
+        { "button:contains('Opportunities')": "Navigate to Opportunities View" },
+        { "span.ellipsis-overflow:contains('YouTube')": "Filter Platform - YouTube" },
+        { "span.ellipsis-overflow:contains('Facebook')": "Filter Platform - Facebook" },
+        { "span.ellipsis-overflow:contains('Instagram')": "Filter Platform - Instagram" },
+        { "span.ellipsis-overflow:contains('Facebook + Instagram')": "Filter Platform - Facebook + Instagram" },
+        { "span.ellipsis-overflow:contains('TikTok')": "Filter Platform - TikTok" },
+        { ".exit-btn": "Exit Filters" },
+        { ".refresh-btn": "Click Details Button" },
+        { "//button[text()='Details']": "Click Account Details Button" },
+        { "//i[@class='fa fa-plus']": "Click Add Graph Button" },
+        { "(//i[@class='fa fa-minus'])[1]": "Click Delete Graph Button" },
+        { "//div[text()='Select a Chart Type']": "Check Empty Graph State" },
+        { "//div[text()='No Graphs Added']": "Check No Graphs Added Message" },
+        { "//span[text()='Select Chart Type']": "Open Graph Type Dropdown" },
+        { "//span[@title='Trend Line']": "Select Graph Type - Trend Line" },
+        { "//span[@title='Bar & Line']": "Select Graph Type - Bar & Line" },
+        { "//span[@title='Bar Chart']": "Select Graph Type - Bar Chart" },
+        { "//span[text()='Select X Axis']": "Open Graph X-Axis Dropdown" },
+        { "//span[text()='Select Y Axis']": "Open Graph Y-Axis Dropdown" },
+        { "//span[text()='Select Line Data']": "Open Graph Line Data Dropdown" },
+        { "//span[@title='Age']": "Select X-Axis - Age" },
+        { "//span[@title='Gender']": "Select X-Axis - Gender" },
+        { "//span[@title='Location']": "Select X-Axis - Location" },
+        { "//span[@title='Impressions']": "Select Y-Axis - Impressions" },
+        { "//span[@title='Internal CPM']": "Select Y-Axis - Internal CPM" },
+        { "//span[@title='by Day']": "Select X-Axis - By Day" },
+        { "//span[@title='Internal CPM']": "Select Line Data - Internal CPM" },
+        { "//span[@title='Internal CPV']": "Select Line Data - Internal CPV" },
+        { "//span[@title='Age']": "Select Line Data - Age" },
+        { "#min-input-impressions": "Enter KPI - Impressions" },
+        { "#min-input-clicks": "Enter KPI - Clicks" },
+        { "#min-input-video_views": "Enter KPI - Views" },
+        { ".apply-btn": "Click Apply Button" },
+        { ".reset-btn": "Click Reset Button" },
+        { ".dropdown-title:contains('Internal')": "Open Internal Metrics Dropdown" },
+        { "[placeholder='Name of the Report']": "Enter Report Name" },
+        { ".submit-btn": "Click Submit Button" },
+        { "button:contains('Today')": "Select Date Range - Today" },
+        { "[placeholder='Set End Date']": "Open Calendar Date Picker" },
+        { "input.email-input": "Enter Recipients" },
+        { "[title='Impressions']": "Select Metric - Impressions" },
+        { ".metrics-dp": "Open Metrics Dropdown" },
+        { ".dimensions-dp": "Open Dimensions Dropdown" },
+        { "[title='Customer Name']": "Select Dimension - Customer Name" },
+        { ".api-items-btn": "Open Select Campaign Dropdown" },
+        { "[placeholder='Search...']": "Enter Campaign Search Query" },
+        { ".api-item-name": "Select Campaign" },
+        { "[placeholder='Filter By User Account']": "Filter by User Account" },
+        { "div.scheduled-card": "Check Scheduled Report Card" },
+        { ".delete-btn": "Click Delete Button" },
+        { ".main": "Get Info Message" },
+        { "//div[text()='Opportunities']": "Click Opportunities Toggle" },
+        { "//div[contains(@class, 'tab-item') and contains(@class, 'selected') and text()='Opportunities']": "Check Active Opportunities Tab" },
+        { "//button[text()='Details']": "Click Opportunity Details Button" },
+        { "//div[@class='global-header-btn']": "Click Back to Opportunity Button" },
+        { "//span[text()='View by: Placement']": "Check Default View By Option" },
+        { "//i[contains(@class, 'material-icons') and text()='check_box']/following-sibling::span[@title='Placement']": "Check Default View By Placement" },
+        { "//*[contains(text(), 'Territory')]": "Check Opportunity List View - Territory" },
+        { "//div[@class='loader-container']": "Check Reporting Loading Bar" },
+        { "span.title": "Get Top Card Title" },
+        { ".dropdown-title:contains('View by: Placement')": "Filter by View By - Placement" },
+        { ".dropdown-title:contains('View by: Platform')": "Filter by View By - Platform" },
+        { ".dropdown-title:contains('Target: All')": "Filter by Target - All" },
+        { ".reset-string": "Click Reset Button" },
+        { "[data-testid='/report_plus']": "Navigate to Reporting Plus Page (Test ID)" },
+        { "[data-testid='btn-rplus-target'] > .btn": "Click Target Button" },
+        { "[data-testid='dropdown-rplus-target']": "Open Target Dropdown" },
+        { "[data-testid='btn-rplus-view-by'] > .btn": "Click View By Button" },
+        { "[data-testid='dropdown-rplus-view-by']": "Open View By Dropdown" },
+        { ".item-row.opportunity": "Select Opportunity Item" }
+    ]
+        }
+    ],
+    "commands": {
+        "loginWithEmail": [
+            "#userName", 
+            "#password", 
+            "#login-btn", 
+            ".login-button-black"
+        ],
+        "createUser": [
+            "#userName", 
+            "#password", 
+            "#login-btn"
+        ],
+        "deleteUser": [
+            "[data-testid='/admin/users']", 
+            ".delete-btn"
+        ],
+        "loginByApi": [
+            "api/v1/auth/"
+        ],
+        "waitUntilLoadingDisappeared": [
+            ".loading-bar.indeterminate"
+        ],
+        "clickOnActionBuild": [
+            ".icon-bubble"
+        ],
+        "buildByVideos": [
+            ".btn-group",
+            "[title='Videos']"
+        ],
+        "navBuildStep": [
+            ".step"
+        ],
+        "selectBuildCategories": [
+            ".item-title span"
+        ],
+        "clickingBreadcrumbs": [
+            "[role='button']"
+        ],
+        "createVideoList": [
+            "api/v2/segments/create/"
+        ],
+        "createChannelList": [
+            "api/v2/segments/create/"
+        ],
+        "deleteVideoList": [
+            "api/v2/segments/video/"
+        ],
+        "deleteChannelList": [
+            "api/v2/segments/channel/"
+        ],
+        "buildAction": [
+            ".name"
+        ],
+        "dynamicRefreshFrequency": [
+            ".listRefreshToggle",
+            ".frequencyDropdown"
+        ],
+        "filterBy": [
+            ".dropdown-title"
+        ],
+        "filterBySubgroup": [
+            ".filters > :nth-child(2) > .btn"
+        ],
+        "fileterByView": [
+            ".filters > :nth-child(1) > .btn"
+        ],
+        "verifyData": [
+            ".item-row"
+        ],
+        "getFirstData": [
+            ".card-stats > .data"
+        ],
+        "findCardWithMetaPlatform": [
+            ".card"
+        ],
+        "filterMetric": [
+            ".header-item"
+        ],
+        "unclickBtns": [
+            "button"
+        ],
+        "clickNotWatchedWithText": [
+            ".content-area", 
+            "button.not-watched"
+        ],
+        "inputAdPerformanceMetrics": [
+            "#min-input-ads_stats.average_cpv", 
+            "#max-input-ads_stats.average_cpv"
+        ],
+        "setMinMax": [
+            "span.holder"
+        ],
+        "setMinValues": [
+            "span.holder.min"
+        ],
+        "verifyValuesEmpty": [
+            "#min-input-ads_stats.average_cpv"
+        ],
+        "verifyTextForEachElement": [
+            "span"
+        ],
+        "getLinkFromEmail": [
+            ".mailosaur-email"
+        ],
+        "checkInspectionCompleteEmail": [
+            ".mailosaur-email"
+        ],
+        "eachElementContainsText": [
+            "span"
+        ],
+        "collectMinValues": [
+            "input[min]"
+        ],
+        "assertionOfValues": [
+            "input[value]"
+        ],
+        "shareListWithDomain": [
+            "[href='/build']",
+            "#search-input",
+            ".expand-icon",
+            ".icon-bubble.share"
+        ],
+        "unshareWithDomain": [
+            "#search-input",
+            ".expand-icon",
+            ".icon-bubble.share"
+        ],
+        "shareListWithUser": [
+            "#search-input",
+            ".expand-icon",
+            ".icon-bubble.share"
+        ],
+        "unshareWithUser": [
+            "#search-input",
+            ".expand-icon",
+            ".icon-bubble.share"
+        ],
+        "waitForSpinner": [
+            ".loading-bar.indeterminate"
+        ],
+        "deleteFile": [
+            "cypress/downloads"
+        ],
+        "deleteKeyword": [
+            ".trash",
+            ".yes"
+        ],
+        "checkInventory": [
+            ".data"
+        ],
+        "verifyStatus": [
+            ".campaign-status"
+        ],
+        "verifyMultiPlatformOnOpView": [
+            ".reporting-card",
+            ".refresh-btn"
+        ],
+        "verifySinglePlatformOnOpView": [
+            ".reporting-card",
+            ".refresh-btn"
+        ],
+        "checkUserStatus": [
+            ".status"
+        ],
+        "navigateToBlocklistManager": [
+            "[href='/admin/blocklist_manager']"
+        ],
+        "checkDateOrder": [
+            ".date-column"
+        ],
+        "visibilityOfElements": [
+            ".panel-title"
+        ],
+        "blockChannel": [
+            ".block-btn"
+        ],
+        "unblockChannel": [
+            ".unblock-btn"
+        ],
+        "checkCampaignsVisibility": [
+            ".campaigns-list",
+            ".info-message"
+        ],
+        "block": [
+            ".block-btn"
+        ],
+        "blockVideo": [
+            ".block-btn"
+        ],
+        "manageUserPermissions": [
+            "api/v1/users/manage_permissions"
+        ],
+        "failOnConsoleError": [
+            "console.error"
+        ],
+        "assertTitles": [
+            "span.title"
+        ],
+        "existenceOfElements": [
+            ".element"
+        ],
+        "deleteUmbrella": [
+            "api/v1/nlp/umbrella"
+        ],
+        "validateDropdown": [
+            ".dropdown-title"
+        ],
+        "validatePopover": [
+            ".simple-popover-btn"
+        ],
+        "validateTypePopover": [
+            ".simple-popover-btn",
+            "[placeholder=\"Search...\"]"
+        ],
+        "validatePopoverExclusion": [
+            ".popover-opener"
+        ],
+        "validateTypePopoverExclusion": [
+            ".popover-opener",
+            "#api-search-input"
+        ],
+        "extractNumericValue": [
+            ".numeric-value"
+        ],
+        "calculateCpm": [
+            ".cpm"
+        ],
+        "extractPercentage": [
+            ".percentage"
+        ],
+        "csvInspect": [
+            "input[type='file']"
+        ],
+        "checkValues": [
+            ".values"
+        ],
+        "getInitialEstimate": [
+            ".estimate-btn",
+            ".estimateNum"
+        ]
+    }
+}
